@@ -1,0 +1,92 @@
+.slider {
+	position: relative;
+	height: 500px;
+}
+
+.slider,
+.images,
+.images img {
+	width: 100%;
+	display: block;
+	overflow: hidden;
+}
+
+.images {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+}
+
+.images img {
+	float: left;
+	height: auto;
+}
+
+.controls {
+	width: 100%;
+	height: 100%;
+	display: block;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+.controls .next,
+.controls .prev {
+	display: block;
+	width: 50%;
+	height: 100%;
+	float: left;
+}
+
+.arrow-right {
+	width: 0; 
+	height: 0; 
+	border-top: 40px solid transparent;
+	border-bottom: 40px solid transparent;
+
+	border-left: 40px solid white;
+}
+
+.arrow-left {
+	width: 0; 
+	height: 0; 
+	border-top: 40px solid transparent;
+	border-bottom: 40px solid transparent; 
+
+	border-right:40px solid white; 
+}
+
+.controls .next .arrow-right,
+.controls .prev .arrow-left {
+	position: relative;
+	top: 35%;
+	margin-left: 5%;
+}
+
+.controls .next .arrow-right {
+	margin-left: 85%;
+}
+
+.dots {
+	position: absolute;
+	left: 50%;
+	bottom: 5%;
+}
+
+.dot {
+	display: block;
+	width: 25px;
+	height: 25px;
+	margin-left: 2px;
+	margin-right: 2px;
+	background: white;
+	-moz-border-radius: 50px;
+	-webkit-border-radius: 50px;
+	border-radius: 50px;
+	float: left;
+}
+
+.dot.active {
+	background: red;
+}
